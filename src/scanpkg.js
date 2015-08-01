@@ -2,7 +2,7 @@
 * @Author: mustafa
 * @Date:   2015-07-30 22:06:41
 * @Last Modified by:   mustafa
-* @Last Modified time: 2015-08-01 07:48:53
+* @Last Modified time: 2015-08-01 11:01:52
 */
 
 var fs = require("fs"),
@@ -109,6 +109,8 @@ exports.new = function(dir, callback) {
 				returnString += modified_control + "\n";
 			}
 		}
+
+		rmrf(tmpDir, function(){});
 
 		if(returnString.lastIndexOf("\n") > 0) {
 			return callback(null, returnString.substring(0, returnString.lastIndexOf("\n")));

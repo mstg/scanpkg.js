@@ -1,6 +1,6 @@
 {
   "name": "scanpkg",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "dpkg-scanpackages in JavaScript",
   "scripts": {
     "test": "node test/scanpkg_test.js"
