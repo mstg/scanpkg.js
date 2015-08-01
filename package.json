@@ -1,0 +1,30 @@
+{
+  "name": "scanpkg.js",
+  "version": "1.0.0",
+  "description": "dpkg-scanpackages in JavaScript",
+  "scripts": {
+    "test": "node test/scanpkg_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mstg/scanpkg.js"
+  },
+  "license": "MIT",
+  "keywords": [
+    "scanpkg",
+    "dpkg-scanpackages",
+    "node",
+    "scanpackages",
+    "javascript",
+    "api"
+  ],
+  "dependencies": {
+    "checksum": "0.1.1"
+  },
+  "author": "mstg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mstg/scanpkg.js/issues"
+  },
+  "homepage": "https://github.com/mstg/scanpkg.js"
+}
