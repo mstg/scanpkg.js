@@ -1,10 +1,11 @@
 {
-  "name": "scanpkg.js",
+  "name": "scanpkg",
   "version": "1.0.0",
   "description": "dpkg-scanpackages in JavaScript",
   "scripts": {
     "test": "node test/scanpkg_test.js"
   },
+  "main": "src/scanpkg.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/mstg/scanpkg.js"

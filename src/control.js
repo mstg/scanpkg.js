@@ -2,7 +2,7 @@
 * @Author: mustafa
 * @Date:   2015-08-01 06:45:50
 * @Last Modified by:   mustafa
-* @Last Modified time: 2015-08-01 06:46:37
+* @Last Modified time: 2015-08-01 07:53:48
 */
 
 'use strict';
@@ -15,9 +15,9 @@ exports.new = function(control) {
 		res = {};
 
 	for(var i = 0; i < splitted.length; i++){
-		var typeval = splitted[i].split(":"),
-			type = trim(String(typeval[0])),
-			value = trim(String(typeval[1]));
+		var line = splitted[i],
+			type = trim(line.substring(0, line.indexOf(":"))),
+			value = trim(line.substring(line.indexOf(":")+1, line.length));
 
 		res[type] = value;
 	}

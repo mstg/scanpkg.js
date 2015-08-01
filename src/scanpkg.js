@@ -2,7 +2,7 @@
 * @Author: mustafa
 * @Date:   2015-07-30 22:06:41
 * @Last Modified by:   mustafa
-* @Last Modified time: 2015-08-01 06:59:06
+* @Last Modified time: 2015-08-01 07:48:53
 */
 
 var fs = require("fs"),
@@ -106,7 +106,7 @@ exports.new = function(dir, callback) {
 				var __control = _control.new(fs.readFileSync(tempPackageControl).toString("utf8")),
 					modified_control = modifyControl(__control, filePath, dir);
 
-				returnString += modified_control + "\n\n";
+				returnString += modified_control + "\n";
 			}
 		}
 
